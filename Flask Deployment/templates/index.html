@@ -1,0 +1,83 @@
+<style>
+    body {
+      background-color: #e0f2f1; /* Light blue background */
+      font-family: Open Sans, sans-serif; /* Fallback for sans-serif */
+    }
+  
+    h1 {
+      color: #3498db; /* Primary - Blue */
+      font-family: Montserrat, sans-serif; /* Headings use Montserrat */
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+  
+    label {
+      color: #2c3e50; /* Text color - Dark grey */
+      display: block;
+      margin-bottom: 0.5em;
+    }
+  
+    input[type="text"],
+    input[type="submit"] {
+      padding: 0.8em 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 1em;
+    }
+  
+    input[type="submit"] {
+      background-color: #f1c40f; /* Secondary - Light orange */
+      color: #fff; /* White text */
+      cursor: pointer;
+    }
+  </style>
+  
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>EPS Prediction by Machine Learning</title>
+  </head>
+  <body>
+  
+    <h1>EPS Prediction by Machine Learning</h1>
+    
+    <form action="/predict" method="POST">
+  
+      <label for="ROCE (%)">ROCE (%):</label>
+      <input type="text" id="ROCE (%)" name="ROCE (%)" required><br>
+  
+      <label for="CASA (%)">CASA (%):</label>
+      <input type="text" id="CASA (%)" name="CASA (%)" required><br>
+  
+      <label for="Return on Equity / Networth (%)">Return on Equity / Networth (%):</label>
+      <input type="text" id="Return on Equity / Networth (%)" name="Return on Equity / Networth (%)" required><br>
+  
+      <label for="Non-Interest Income/Total Assets (%)">Non-Interest Income/Total Assets (%):</label>
+      <input type="text" id="Non-Interest Income/Total Assets (%)" name="Non-Interest Income/Total Assets (%)" required><br>
+  
+      <label for="Operating Profit/Total Assets (%)">Operating Profit/Total Assets (%):</label>
+      <input type="text" id="Operating Profit/Total Assets (%)" name="Operating Profit/Total Assets (%)" required><br>
+  
+      <label for="Operating Expenses/Total Assets (%)">Operating Expenses/Total Assets (%):</label>
+      <input type="text" id="Operating Expenses/Total Assets (%)" name="Operating Expenses/Total Assets (%)" required><br>
+  
+      <label for="Interest Expenses/Total Assets (%)">Interest Expenses/Total Assets (%):</label>
+      <input type="text" id="Interest Expenses/Total Assets (%)" name="Interest Expenses/Total Assets (%)" required><br>
+  
+      <label for="Face_value">Face value:</label>
+      <input type="text" id="Face_value" name="Face_value" required><br><br><br>
+  
+  
+  
+  
+      <input type="submit" value="Predict using ML"><br><br><br>
+  
+  
+      
+      <p style="font-size: 1.2em; font-weight: bold;">EPS Predicted: <span id="result">{{result}}</span></p>
+  
+  
+    </form>
+  </body>
+  </html>
+  
