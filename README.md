@@ -2,11 +2,11 @@
 ## Credit Risk Management
 
 ### Problem Statement
-This dataset contains information about bank customers and their eligibility for loans. The goal is to build a model that detects whether a customer is eligible for a loan or not.
+This dataset includes information about bank customers and their loan eligibility. It comprises customer data from Bank of Baroda, an Indian bank, as well as data from CIBIL, a credit rating agency. The objective is to develop a model that determines a customer's loan eligibility.
 
 ### Data
 - Data is present in two different files, both containing the same data about the bank.
-- Both files also contain `-99999` values, which are missing values.
+- Both files also contain `-99999` values, which are missing.
 
 ### Reading Data
 ```python
